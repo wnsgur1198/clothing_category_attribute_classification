@@ -47,6 +47,10 @@ Dataset: Deep Fashion Database
 
 ## Release History
 
+* 0.2.0
+    * feat: create category dataset
+    * 의복종류(category)에 대한 데이터셋 생성 완료
+    
 * 0.1.0
     * first commit
     * 의복종류(category)에 대한 데이터셋 생성을 위한 코드
