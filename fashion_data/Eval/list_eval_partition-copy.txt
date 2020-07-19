@@ -3,9 +3,10 @@ image_name  evaluation_status
 img/Sheer_Pleated-Front_Blouse/img_00000001.jpg                        train
 img/Sheer_Pleated-Front_Blouse/img_00000002.jpg                        test
 img/Sheer_Pleated-Front_Blouse/img_00000003.jpg                        val
-img/Bow-Front_Woven_Top/img_00000001.jpg                               train
-img/Bow-Front_Woven_Top/img_00000002.jpg                               test
-img/Bow-Front_Woven_Top/img_00000003.jpg                               val
 img/Reason_Woke_Up_Like_This_Tee/img_00000001.jpg                      train
 img/Reason_Woke_Up_Like_This_Tee/img_00000002.jpg                      test
 img/Reason_Woke_Up_Like_This_Tee/img_00000003.jpg                      val
+img/Bow-Front_Woven_Top/img_00000001.jpg                               train
+img/Bow-Front_Woven_Top/img_00000002.jpg                               test
+img/Bow-Front_Woven_Top/img_00000003.jpg                               val
+

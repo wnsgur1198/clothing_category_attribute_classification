@@ -119,6 +119,3 @@ decay=0.0
 momentum=0.0
 activation='relu'
 dropout_rate=0.5
-
-
-

@@ -26,7 +26,7 @@ def create_dataset_split_structure():
         os.makedirs(dataset_test_path)
 
 
-# 이미지 폴더, 평가 폴더 경로를 받아 이미지파일명 추출 -----------
+# 데이터셋 폴더 경로명 추출 -----------
 def get_dataset_split_name(image_path_name, file_ptr):
     for line in file_ptr:
         if image_path_name in line:
@@ -170,10 +170,12 @@ def display_clothing_data():
         logging.info('path {}'.format(path))
 
         # os.walk 함수 : 시작 디렉터리부터 시작하여 그 하위 모든 디렉터리를 차례대로 방문하게 해주는 함수
-        path1, dirs1, files1 = os.walk(path).next()
+        # path1, dirs1, files1 = os.walk(path).next()                               # 파이썬3에서 지원하지 않는 형식임
+        path1, dirs1, files1 = next(os.walk(path))
         
         file_count1 = len(files1)
         for dirs1_name in dirs1:
-            path2, dirs2, files2 = os.walk(os.path.join(path, dirs1_name)).next()
+            # path2, dirs2, files2 = os.walk(os.path.join(path, dirs1_name)).next()  # 파이썬3에서 지원하지 않는 형식임
+            path2, dirs2, files2 = next(os.walk(os.path.join(path, dirs1_name)))
             file_count2 = len(files2)
             logging.info('{:20s} : {}'.format(dirs1_name, file_count2))

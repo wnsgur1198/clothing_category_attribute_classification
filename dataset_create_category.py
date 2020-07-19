@@ -12,6 +12,7 @@ from dataset_create_super import *
 ### GLOBALS
 # 데이터셋의 의복 종류 개수 -----------
 max_categories = 50
+# max_categories = 3
 
 # 딥패션 데이터셋의 모든 의복 종류 -----------
 # category_name_generate = ['Anorak', 'Blazer', 'Blouse', 'Bomber', 'Button-Down', 'Cardigan', 'Flannel', 'Halter', 'Henley', 'Hoodie', 'Jacket', 'Jersey', 'Parka', 'Peacoat', 'Poncho', 'Sweater', 'Tank', 'Tee', 'Top', 'Turtleneck', 'Capris', 'Chinos', 'Culottes', 'Cutoffs', 'Gauchos', 'Jeans', 'Jeggings', 'Jodhpurs', 'Joggers', 'Leggings', 'Sarong', 'Shorts', 'Skirt', 'Sweatpants', 'Sweatshorts', 'Trunks', 'Caftan', 'Cape', 'Coat', 'Coverup', 'Dress', 'Jumpsuit', 'Kaftan', 'Kimono', 'Nightdress', 'Onesie', 'Robe', 'Romper', 'Shirtdress', 'Sundress']
@@ -31,6 +32,7 @@ def get_category_names():
 
     # 현재 폴더에 있는 Anno의 list_category_cloth.txt에서 의복 종류 목록을 얻음
     with open(fashion_dataset_path + '/Anno/list_category_cloth.txt') as file_list_category_cloth:
+    # with open(fashion_dataset_path + '/Anno/list_category_cloth-copy.txt') as file_list_category_cloth:
         next(file_list_category_cloth)
 
         # strip함수는 문자열 양 끝에 있는 공백,개행문자를 제거함
@@ -103,7 +105,8 @@ def generate_dataset_images(category_names):
                     logging.debug('image_name {}'.format(image_name))                                           # image_name img_00000051.jpg
                     image_full_name = line[0].replace('/', '_')
                     logging.debug('image_full_name {}'.format(image_full_name))                                 # img_Tailored_Woven_Blazer_img_00000051.jpg
-                    image_category_index=int(line[1:][0]) - 1
+                    # image_category_index = int(line[1:][0]) - 1
+                    image_category_index = int(line[1:][0])
                     logging.debug('image_category_index {}'.format(image_category_index))                       # 2
 
                     # 내가 지정한 의복종류가 아니면 continue
@@ -162,13 +165,15 @@ def generate_dataset_images(category_names):
 if __name__ == '__main__':
     # dataset_create_super.py에 있는 create_dataset_split_structure 함수 호출
     # 데이터셋 폴더 생성
-    # create_dataset_split_structure()
+    create_dataset_split_structure()
 
     category_names = get_category_names()
     # logging.debug('category_names {}'.format(category_names))
 
     # 지정된 각 의복 종류 폴더 생성
-    # create_category_structure(category_names)
+    create_category_structure(category_names)
+
+    # 학습을 위해 라벨링 정보에 따라 각 라벨로 분리된 이미지 생성
     generate_dataset_images(category_names)
 
     # dataset_create_super.py에 있는 display_clothing_data 함수 호출
