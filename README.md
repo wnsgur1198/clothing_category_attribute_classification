@@ -17,21 +17,21 @@
 
 분석 결과인 의복의 종류 및 색상을 웹에 반환함
 
-dataset_create_super.py
+- dataset_create_super.py
 
-- 데이터셋 생성을 위한 수퍼클래스
+   - 데이터셋 생성을 위한 수퍼클래스
 
-dataset_create_category.py
+- dataset_create_category.py
 
-- 의복 종류에 대한 데이터셋 생성
+   - 의복 종류에 대한 데이터셋 생성
 
-config.py
+- config.py
 
-- 관련 변수 및 모듈 선언
+   - 관련 변수 및 모듈 선언
 
-selective_search.py
+- selective_search.py
 
-- dataset_create_super.py에서 호출하여 사용함
+   - dataset_create_super.py에서 호출하여 사용함
 
 ## Development setup
 
