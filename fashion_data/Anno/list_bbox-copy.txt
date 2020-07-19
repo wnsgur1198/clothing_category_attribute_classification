@@ -1,0 +1,11 @@
+289222
+image_name  x_1  y_1  x_2  y_2
+img/Sheer_Pleated-Front_Blouse/img_00000001.jpg                        072 079 232 273
+img/Sheer_Pleated-Front_Blouse/img_00000002.jpg                        067 059 155 161
+img/Sheer_Pleated-Front_Blouse/img_00000003.jpg                        065 065 156 200
+img/Reason_Woke_Up_Like_This_Tee/img_00000001.jpg                      003 074 190 300
+img/Reason_Woke_Up_Like_This_Tee/img_00000002.jpg                      001 001 200 200
+img/Reason_Woke_Up_Like_This_Tee/img_00000003.jpg                      043 079 195 266
+img/Bow-Front_Woven_Top/img_00000001.jpg                               045 047 137 130
+img/Bow-Front_Woven_Top/img_00000002.jpg                               066 080 229 288
+img/Bow-Front_Woven_Top/img_00000003.jpg                               059 079 139 265

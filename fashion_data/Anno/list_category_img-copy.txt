@@ -1,0 +1,11 @@
+289222
+image_name  category_label
+img/Sheer_Pleated-Front_Blouse/img_00000001.jpg                        3
+img/Sheer_Pleated-Front_Blouse/img_00000002.jpg                        3
+img/Sheer_Pleated-Front_Blouse/img_00000003.jpg                        3
+img/Reason_Woke_Up_Like_This_Tee/img_00000001.jpg                      18
+img/Reason_Woke_Up_Like_This_Tee/img_00000002.jpg                      18
+img/Reason_Woke_Up_Like_This_Tee/img_00000003.jpg                      18
+img/Bow-Front_Woven_Top/img_00000001.jpg                               19
+img/Bow-Front_Woven_Top/img_00000002.jpg                               19
+img/Bow-Front_Woven_Top/img_00000003.jpg                               19
