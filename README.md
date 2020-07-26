@@ -33,6 +33,19 @@
 
    - dataset_create_super.py에서 호출하여 사용함
 
+- model.py
+
+   - Inception Resnet V2에 SENet를 추가한 딥러닝 네트워크 모델
+
+   - 하이퍼패러미터는 학습 후 정확도에 따라 조정해야 함
+
+- train.py
+
+   - 딥러닝 모델의 학습을 위한 코드
+   
+   - v0.3.0에서는 cifar10 데이터셋으로 테스트하려고 했지만 입력배열 차원의 불일치로 실패. 그냥 Deep Fashion 데이터셋을 사용하도록 함. 아직 경로지정 하지 않음
+
+
 ## Development setup
 
 OS: Ubuntu 16.04
@@ -46,6 +59,11 @@ Keras 2.3.1
 Dataset: Deep Fashion Database
 
 ## Release History
+
+* 0.3.0
+    * feat: generate deep learning model and proceed train code
+    * 딥러닝 네트워크 모델 생성 완료
+    * 딥러닝 네트워크 학습을 위한 코드 진행 중
 
 * 0.2.0
     * feat: create category dataset
